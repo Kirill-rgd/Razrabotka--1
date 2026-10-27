@@ -1,0 +1,11 @@
+*.o
+server
+Debug/
+TIMP_Server/
+*.mk
+*.project
+*.workspace
+*.txt
+.clangd
+.clang-format
+client_uint32_t
