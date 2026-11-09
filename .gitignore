@@ -9,3 +9,9 @@ TIMP_Server/
 .clangd
 .clang-format
 client_uint32_t
+test_server
+*.log
+functional_test.log
+test_db.conf
+db.conf
+t.log

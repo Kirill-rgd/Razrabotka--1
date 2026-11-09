@@ -16,3 +16,10 @@ $(TARGET): $(OBJS)
 
 clean:
 	rm -f $(OBJS) $(TARGET)
+# Модульные тесты
+test_main.o: test_main.cpp
+	g++ -std=c++17 -Wall -Wextra -c test_main.cpp -o test_main.o
+
+test: test_main.o Logger.o ServerConfig.o AuthDatabase.o Authenticator.o VectorProcessor.o
+	g++ test_main.o Logger.o ServerConfig.o AuthDatabase.o Authenticator.o VectorProcessor.o -o test_server -lcryptopp -lpthread
+	./test_server
