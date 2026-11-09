@@ -1,6 +1,8 @@
 #include "VectorProcessor.h"
-#include <climits>
+#include "Logger.h"
+#include <limits>
 
+constexpr uint64_t MAX_UINT32 = 4294967295ULL;
 uint32_t VectorProcessor::sumVector(const std::vector<uint32_t>& vec, Logger& logger) {
     uint32_t sum = 0;
     bool overflow = false;
