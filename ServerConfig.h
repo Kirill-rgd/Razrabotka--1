@@ -9,12 +9,14 @@ struct ServerParams {
     std::string logPath;
     uint16_t port;
     bool showHelp;
+    bool isRun;
     
     ServerParams() {
         dbPath = "base/server.conf";
         logPath = "login/server.log";
         port = 33333;
         showHelp = false;
+        isRun = false;
     }
 };
 
