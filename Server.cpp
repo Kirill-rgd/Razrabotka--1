@@ -113,6 +113,7 @@ void Server::processVectors(int clientSocket) {
     receiveBinary(clientSocket, &n, sizeof(n));
     
     logger.logInfo("Получено количество векторов: " + std::to_string(n));
+	logger.logInfo("Начало обработки векторов от клиента");
 
     for (uint32_t i = 0; i < n; ++i) {
         uint32_t s = 0;
