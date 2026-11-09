@@ -36,8 +36,8 @@ std::string Logger::levelToString(LogLevel level) {
 void Logger::log(LogLevel level, const std::string& message) {
     std::lock_guard<std::mutex> lock(logMutex);
     if (logFile.is_open()) {
-        logFile << "[" << getCurrentTime() << "] [" 
-                << levelToString(level) << "] " << message << "\n";
+        logFile << "[" << getCurrentTime() << "]  [" 
+                << levelToString(level) << "]  " << message << "\n";
         logFile.flush();
     }
 }
