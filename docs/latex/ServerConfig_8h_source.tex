@@ -1,0 +1,31 @@
+\doxysection{Server\+Config.\+h}
+\hypertarget{ServerConfig_8h_source}{}\label{ServerConfig_8h_source}\mbox{\hyperlink{ServerConfig_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Exceptions_8h}{Exceptions.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structServerParams}{ServerParams}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ std::string\ \mbox{\hyperlink{structServerParams_af08255780c7f203b23cab23ff140b4d5}{dbPath}};\ }
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ \mbox{\hyperlink{structServerParams_a7d4b9fe28811e2956dad0d712709ba1f}{logPath}};\ }
+\DoxyCodeLine{00021\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{structServerParams_ab5ac86f67f884b7c9ab82259e3f78622}{port}};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structServerParams_ad98df688f6fd7b12f55bbd6790bb050f}{showHelp}};\ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structServerParams_a7245b72ff3d758fd9d061b277a58a9eb}{isRun}};\ }
+\DoxyCodeLine{00024\ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{structServerParams_aefed06633a525d96bc8a5f83ca2afa4f}{ServerParams}}()\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structServerParams_af08255780c7f203b23cab23ff140b4d5}{dbPath}}\ =\ \textcolor{stringliteral}{"{}base/server.conf"{}};\ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structServerParams_a7d4b9fe28811e2956dad0d712709ba1f}{logPath}}\ =\ \textcolor{stringliteral}{"{}login/server.log"{}};\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structServerParams_ab5ac86f67f884b7c9ab82259e3f78622}{port}}\ =\ 33333;\ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structServerParams_ad98df688f6fd7b12f55bbd6790bb050f}{showHelp}}\ =\ \textcolor{keyword}{false};\ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structServerParams_a7245b72ff3d758fd9d061b277a58a9eb}{isRun}}\ =\ \textcolor{keyword}{false};\ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00036\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classServerConfig}{ServerConfig}}\ \{}
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structServerParams}{ServerParams}}\ \mbox{\hyperlink{classServerConfig_a0315905f5dd209407d43f362c5602a39}{parseArgs}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}*\ argv[]);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classServerConfig_aa437d8e88b53131cdb76f9ca3bc512f5}{showHelp}}();}
+\DoxyCodeLine{00046\ \};}
+
+\end{DoxyCode}

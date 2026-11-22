@@ -1,0 +1,48 @@
+\doxysection{Класс Vector\+Processor}
+\hypertarget{classVectorProcessor}{}\label{classVectorProcessor}\index{VectorProcessor@{VectorProcessor}}
+
+
+Класс обработки векторов  
+
+
+
+
+{\ttfamily \#include $<$Vector\+Processor.\+h$>$}
+
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{classVectorProcessor_a362f9f6b15ab6683c4368edb314d923f}{sum\+Vector}} (const std\+::vector$<$ uint32\+\_\+t $>$ \&vec, \mbox{\hyperlink{classLogger}{Logger}} \&logger)
+\begin{DoxyCompactList}\small\item\em Вычисление суммы элементов вектора \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс обработки векторов 
+
+\doxysubsection{Методы}
+\Hypertarget{classVectorProcessor_a362f9f6b15ab6683c4368edb314d923f}\label{classVectorProcessor_a362f9f6b15ab6683c4368edb314d923f} 
+\index{VectorProcessor@{VectorProcessor}!sumVector@{sumVector}}
+\index{sumVector@{sumVector}!VectorProcessor@{VectorProcessor}}
+\doxysubsubsection{\texorpdfstring{sumVector()}{sumVector()}}
+{\footnotesize\ttfamily uint32\+\_\+t Vector\+Processor\+::sum\+Vector (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ uint32\+\_\+t $>$ \&}]{vec,  }\item[{\mbox{\hyperlink{classLogger}{Logger}} \&}]{logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вычисление суммы элементов вектора 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em vec} & вектор элементов типа uint32\+\_\+t \\
+\hline
+{\em logger} & объект журнала для записи предупреждений о переполнении \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+сумма элементов. При переполнении возвращается UINT32\+\_\+\+MAX 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{VectorProcessor_8h}{Vector\+Processor.\+h}}\item 
+\mbox{\hyperlink{VectorProcessor_8cpp}{Vector\+Processor.\+cpp}}\end{DoxyCompactItemize}

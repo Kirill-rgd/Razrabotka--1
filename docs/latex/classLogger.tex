@@ -1,0 +1,202 @@
+\doxysection{Класс Logger}
+\hypertarget{classLogger}{}\label{classLogger}\index{Logger@{Logger}}
+
+
+Класс для записи событий в файл журнала  
+
+
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogger_a9c5e75850db50c2698f7872e5910c567}{Logger}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Конструктор, открывает файл журнала \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a}{\texorpdfstring{$\sim$}{\string~}\+Logger}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор, закрывает файл журнала \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_a3d3f0801eeaf39b33a906ea8569c19b2}{log}} (\mbox{\hyperlink{Logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} level, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Запись сообщения в журнал \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_a3b2e97470572358030fa427c649cf8d5}{log\+Info}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Запись информационного сообщения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_ab786d664f4aef11f9457e17cbeb93b38}{log\+Warning}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Запись предупреждения \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_a00cc5c454a6af6300e5457ae277897d9}{log\+Error}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Запись ошибки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classLogger_a8fe26a13346f80c03fff0667ad8692fc}{get\+Current\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Получить текущую дату и время \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classLogger_acfb794ab842c63396ad1c6a771f43483}{level\+To\+String}} (\mbox{\hyperlink{Logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} level)
+\begin{DoxyCompactList}\small\item\em Преобразовать уровень в строку \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classLogger_af37c5f92d8afc2d1213c576f5e667a8e}{log\+File\+Path}}
+\begin{DoxyCompactList}\small\item\em Путь к файлу журнала \end{DoxyCompactList}\item 
+std\+::ofstream \mbox{\hyperlink{classLogger_acc94bd19d6a022e574a5733c87fed67a}{log\+File}}
+\begin{DoxyCompactList}\small\item\em Поток для записи в файл \end{DoxyCompactList}\item 
+std\+::mutex \mbox{\hyperlink{classLogger_a1a7f5dc4185f8bff7778f1d6aa8525a9}{log\+Mutex}}
+\begin{DoxyCompactList}\small\item\em Мьютекс для потокобезопасности \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для записи событий в файл журнала 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classLogger_a9c5e75850db50c2698f7872e5910c567}\label{classLogger_a9c5e75850db50c2698f7872e5910c567} 
+\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор, открывает файл журнала 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path} & путь к файлу журнала \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classIOError}{IOError}} & если файл не удалось открыть \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a}\label{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a} 
+\index{Logger@{Logger}!````~Logger@{\texorpdfstring{$\sim$}{\string~}Logger}}
+\index{````~Logger@{\texorpdfstring{$\sim$}{\string~}Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Logger()}{\string~Logger()}}
+{\footnotesize\ttfamily Logger\+::\texorpdfstring{$\sim$}{\string~}\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Деструктор, закрывает файл журнала 
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{classLogger_a8fe26a13346f80c03fff0667ad8692fc}\label{classLogger_a8fe26a13346f80c03fff0667ad8692fc} 
+\index{Logger@{Logger}!getCurrentTime@{getCurrentTime}}
+\index{getCurrentTime@{getCurrentTime}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{getCurrentTime()}{getCurrentTime()}}
+{\footnotesize\ttfamily std\+::string Logger\+::get\+Current\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Получить текущую дату и время 
+
+\Hypertarget{classLogger_acfb794ab842c63396ad1c6a771f43483}\label{classLogger_acfb794ab842c63396ad1c6a771f43483} 
+\index{Logger@{Logger}!levelToString@{levelToString}}
+\index{levelToString@{levelToString}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{levelToString()}{levelToString()}}
+{\footnotesize\ttfamily std\+::string Logger\+::level\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Преобразовать уровень в строку 
+
+\Hypertarget{classLogger_a3d3f0801eeaf39b33a906ea8569c19b2}\label{classLogger_a3d3f0801eeaf39b33a906ea8569c19b2} 
+\index{Logger@{Logger}!log@{log}}
+\index{log@{log}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Logger\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}}]{level,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Запись сообщения в журнал 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em level} & уровень критичности \\
+\hline
+{\em message} & текст сообщения \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLogger_a00cc5c454a6af6300e5457ae277897d9}\label{classLogger_a00cc5c454a6af6300e5457ae277897d9} 
+\index{Logger@{Logger}!logError@{logError}}
+\index{logError@{logError}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logError()}{logError()}}
+{\footnotesize\ttfamily void Logger\+::log\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Запись ошибки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & текст сообщения \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLogger_a3b2e97470572358030fa427c649cf8d5}\label{classLogger_a3b2e97470572358030fa427c649cf8d5} 
+\index{Logger@{Logger}!logInfo@{logInfo}}
+\index{logInfo@{logInfo}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logInfo()}{logInfo()}}
+{\footnotesize\ttfamily void Logger\+::log\+Info (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Запись информационного сообщения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & текст сообщения \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLogger_ab786d664f4aef11f9457e17cbeb93b38}\label{classLogger_ab786d664f4aef11f9457e17cbeb93b38} 
+\index{Logger@{Logger}!logWarning@{logWarning}}
+\index{logWarning@{logWarning}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logWarning()}{logWarning()}}
+{\footnotesize\ttfamily void Logger\+::log\+Warning (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Запись предупреждения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & текст сообщения \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{classLogger_acc94bd19d6a022e574a5733c87fed67a}\label{classLogger_acc94bd19d6a022e574a5733c87fed67a} 
+\index{Logger@{Logger}!logFile@{logFile}}
+\index{logFile@{logFile}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logFile}{logFile}}
+{\footnotesize\ttfamily std\+::ofstream Logger\+::log\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Поток для записи в файл 
+
+\Hypertarget{classLogger_af37c5f92d8afc2d1213c576f5e667a8e}\label{classLogger_af37c5f92d8afc2d1213c576f5e667a8e} 
+\index{Logger@{Logger}!logFilePath@{logFilePath}}
+\index{logFilePath@{logFilePath}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logFilePath}{logFilePath}}
+{\footnotesize\ttfamily std\+::string Logger\+::log\+File\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Путь к файлу журнала 
+
+\Hypertarget{classLogger_a1a7f5dc4185f8bff7778f1d6aa8525a9}\label{classLogger_a1a7f5dc4185f8bff7778f1d6aa8525a9} 
+\index{Logger@{Logger}!logMutex@{logMutex}}
+\index{logMutex@{logMutex}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logMutex}{logMutex}}
+{\footnotesize\ttfamily std\+::mutex Logger\+::log\+Mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Мьютекс для потокобезопасности 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Logger_8h}{Logger.\+h}}\item 
+\mbox{\hyperlink{Logger_8cpp}{Logger.\+cpp}}\end{DoxyCompactItemize}

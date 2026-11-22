@@ -1,0 +1,349 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}Logger}
+    \subitem {Logger}, \hyperpage{13}
+  \item {\texorpdfstring{$\sim$}{\string~}Server}
+    \subitem {Server}, \hyperpage{17}
+
+  \indexspace
+
+  \item {acceptConnection}
+    \subitem {Server}, \hyperpage{17}
+  \item {AuthDatabase}, \hyperpage{7}
+    \subitem {findUser}, \hyperpage{7}
+    \subitem {load}, \hyperpage{8}
+    \subitem {users}, \hyperpage{8}
+  \item {AuthDatabase.cpp}, \hyperpage{23}
+  \item {AuthDatabase.h}, \hyperpage{23}
+  \item {authenticate}
+    \subitem {Server}, \hyperpage{17}
+  \item {Authenticator}, \hyperpage{8}
+    \subitem {computeHash}, \hyperpage{9}
+    \subitem {generateSalt16}, \hyperpage{9}
+    \subitem {parseAuthMessage}, \hyperpage{9}
+    \subitem {verify}, \hyperpage{10}
+  \item {Authenticator.cpp}, \hyperpage{24}
+  \item {Authenticator.h}, \hyperpage{24}
+  \item {AuthError}, \hyperpage{10}
+    \subitem {AuthError}, \hyperpage{11}
+
+  \indexspace
+
+  \item {check}
+    \subitem {test\_main.cpp}, \hyperpage{32}
+  \item {computeHash}
+    \subitem {Authenticator}, \hyperpage{9}
+  \item {ConfigError}, \hyperpage{11}
+    \subitem {ConfigError}, \hyperpage{11}
+
+  \indexspace
+
+  \item {db}
+    \subitem {Server}, \hyperpage{19}
+  \item {dbPath}
+    \subitem {ServerParams}, \hyperpage{21}
+
+  \indexspace
+
+  \item {ERROR}
+    \subitem {Logger.h}, \hyperpage{27}
+  \item {Exceptions.h}, \hyperpage{25}
+
+  \indexspace
+
+  \item {failed}
+    \subitem {test\_main.cpp}, \hyperpage{36}
+  \item {findUser}
+    \subitem {AuthDatabase}, \hyperpage{7}
+
+  \indexspace
+
+  \item {generateSalt16}
+    \subitem {Authenticator}, \hyperpage{9}
+  \item {getCurrentTime}
+    \subitem {Logger}, \hyperpage{14}
+
+  \indexspace
+
+  \item {INFO}
+    \subitem {Logger.h}, \hyperpage{27}
+  \item {initSocket}
+    \subitem {Server}, \hyperpage{17}
+  \item {IOError}, \hyperpage{12}
+    \subitem {IOError}, \hyperpage{12}
+  \item {isRun}
+    \subitem {ServerParams}, \hyperpage{21}
+
+  \indexspace
+
+  \item {levelToString}
+    \subitem {Logger}, \hyperpage{14}
+  \item {load}
+    \subitem {AuthDatabase}, \hyperpage{8}
+  \item {log}
+    \subitem {Logger}, \hyperpage{14}
+  \item {log\_contains}
+    \subitem {test\_main.cpp}, \hyperpage{32}
+  \item {logError}
+    \subitem {Logger}, \hyperpage{14}
+  \item {logFile}
+    \subitem {Logger}, \hyperpage{15}
+  \item {logFilePath}
+    \subitem {Logger}, \hyperpage{15}
+  \item {Logger}, \hyperpage{12}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Logger}, \hyperpage{13}
+    \subitem {getCurrentTime}, \hyperpage{14}
+    \subitem {levelToString}, \hyperpage{14}
+    \subitem {log}, \hyperpage{14}
+    \subitem {logError}, \hyperpage{14}
+    \subitem {logFile}, \hyperpage{15}
+    \subitem {logFilePath}, \hyperpage{15}
+    \subitem {Logger}, \hyperpage{13}
+    \subitem {logInfo}, \hyperpage{14}
+    \subitem {logMutex}, \hyperpage{15}
+    \subitem {logWarning}, \hyperpage{15}
+  \item {logger}
+    \subitem {Server}, \hyperpage{19}
+  \item {Logger.cpp}, \hyperpage{26}
+  \item {Logger.h}, \hyperpage{26}
+    \subitem {ERROR}, \hyperpage{27}
+    \subitem {INFO}, \hyperpage{27}
+    \subitem {LogLevel}, \hyperpage{26}
+    \subitem {WARNING}, \hyperpage{27}
+  \item {logInfo}
+    \subitem {Logger}, \hyperpage{14}
+  \item {LogLevel}
+    \subitem {Logger.h}, \hyperpage{26}
+  \item {logMutex}
+    \subitem {Logger}, \hyperpage{15}
+  \item {logPath}
+    \subitem {ServerParams}, \hyperpage{21}
+  \item {logWarning}
+    \subitem {Logger}, \hyperpage{15}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{28}
+    \subitem {test\_main.cpp}, \hyperpage{32}
+  \item {main.cpp}, \hyperpage{27}
+    \subitem {main}, \hyperpage{28}
+  \item {MAX\_UINT32}
+    \subitem {VectorProcessor.cpp}, \hyperpage{37}
+
+  \indexspace
+
+  \item {NetworkError}, \hyperpage{15}
+    \subitem {NetworkError}, \hyperpage{16}
+
+  \indexspace
+
+  \item {params}
+    \subitem {Server}, \hyperpage{19}
+  \item {parseArgs}
+    \subitem {ServerConfig}, \hyperpage{19}
+  \item {parseAuthMessage}
+    \subitem {Authenticator}, \hyperpage{9}
+  \item {passed}
+    \subitem {test\_main.cpp}, \hyperpage{36}
+  \item {port}
+    \subitem {ServerParams}, \hyperpage{21}
+  \item {processVectors}
+    \subitem {Server}, \hyperpage{18}
+  \item {ProgramError}, \hyperpage{16}
+    \subitem {ProgramError}, \hyperpage{16}
+
+  \indexspace
+
+  \item {receiveBinary}
+    \subitem {Server}, \hyperpage{18}
+  \item {receiveText}
+    \subitem {Server}, \hyperpage{18}
+  \item {run}
+    \subitem {Server}, \hyperpage{18}
+
+  \indexspace
+
+  \item {sendBinary}
+    \subitem {Server}, \hyperpage{18}
+  \item {sendText}
+    \subitem {Server}, \hyperpage{18}
+  \item {Server}, \hyperpage{16}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Server}, \hyperpage{17}
+    \subitem {acceptConnection}, \hyperpage{17}
+    \subitem {authenticate}, \hyperpage{17}
+    \subitem {db}, \hyperpage{19}
+    \subitem {initSocket}, \hyperpage{17}
+    \subitem {logger}, \hyperpage{19}
+    \subitem {params}, \hyperpage{19}
+    \subitem {processVectors}, \hyperpage{18}
+    \subitem {receiveBinary}, \hyperpage{18}
+    \subitem {receiveText}, \hyperpage{18}
+    \subitem {run}, \hyperpage{18}
+    \subitem {sendBinary}, \hyperpage{18}
+    \subitem {sendText}, \hyperpage{18}
+    \subitem {Server}, \hyperpage{17}
+    \subitem {serverSocket}, \hyperpage{19}
+    \subitem {start}, \hyperpage{18}
+  \item {Server.cpp}, \hyperpage{28}
+  \item {Server.h}, \hyperpage{29}
+  \item {ServerConfig}, \hyperpage{19}
+    \subitem {parseArgs}, \hyperpage{19}
+    \subitem {showHelp}, \hyperpage{20}
+  \item {ServerConfig.cpp}, \hyperpage{30}
+  \item {ServerConfig.h}, \hyperpage{30}
+  \item {ServerParams}, \hyperpage{20}
+    \subitem {dbPath}, \hyperpage{21}
+    \subitem {isRun}, \hyperpage{21}
+    \subitem {logPath}, \hyperpage{21}
+    \subitem {port}, \hyperpage{21}
+    \subitem {ServerParams}, \hyperpage{21}
+    \subitem {showHelp}, \hyperpage{21}
+  \item {serverSocket}
+    \subitem {Server}, \hyperpage{19}
+  \item {showHelp}
+    \subitem {ServerConfig}, \hyperpage{20}
+    \subitem {ServerParams}, \hyperpage{21}
+  \item {start}
+    \subitem {Server}, \hyperpage{18}
+  \item {sumVector}
+    \subitem {VectorProcessor}, \hyperpage{22}
+
+  \indexspace
+
+  \item {t1}
+    \subitem {test\_main.cpp}, \hyperpage{32}
+  \item {t10}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t11}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t12}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t15}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t16}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t17}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t18}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t19}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t2}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t20}
+    \subitem {test\_main.cpp}, \hyperpage{33}
+  \item {t21}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t22}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t23}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t24}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t25}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t26}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t27}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t28}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t29}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t3}
+    \subitem {test\_main.cpp}, \hyperpage{34}
+  \item {t30}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t31}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t32}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t33}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t34}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t35}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t36}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t37}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t4}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t5}
+    \subitem {test\_main.cpp}, \hyperpage{35}
+  \item {t6}
+    \subitem {test\_main.cpp}, \hyperpage{36}
+  \item {t7}
+    \subitem {test\_main.cpp}, \hyperpage{36}
+  \item {t8}
+    \subitem {test\_main.cpp}, \hyperpage{36}
+  \item {t9}
+    \subitem {test\_main.cpp}, \hyperpage{36}
+  \item {test\_main.cpp}, \hyperpage{31}
+    \subitem {check}, \hyperpage{32}
+    \subitem {failed}, \hyperpage{36}
+    \subitem {log\_contains}, \hyperpage{32}
+    \subitem {main}, \hyperpage{32}
+    \subitem {passed}, \hyperpage{36}
+    \subitem {t1}, \hyperpage{32}
+    \subitem {t10}, \hyperpage{33}
+    \subitem {t11}, \hyperpage{33}
+    \subitem {t12}, \hyperpage{33}
+    \subitem {t15}, \hyperpage{33}
+    \subitem {t16}, \hyperpage{33}
+    \subitem {t17}, \hyperpage{33}
+    \subitem {t18}, \hyperpage{33}
+    \subitem {t19}, \hyperpage{33}
+    \subitem {t2}, \hyperpage{33}
+    \subitem {t20}, \hyperpage{33}
+    \subitem {t21}, \hyperpage{34}
+    \subitem {t22}, \hyperpage{34}
+    \subitem {t23}, \hyperpage{34}
+    \subitem {t24}, \hyperpage{34}
+    \subitem {t25}, \hyperpage{34}
+    \subitem {t26}, \hyperpage{34}
+    \subitem {t27}, \hyperpage{34}
+    \subitem {t28}, \hyperpage{34}
+    \subitem {t29}, \hyperpage{34}
+    \subitem {t3}, \hyperpage{34}
+    \subitem {t30}, \hyperpage{35}
+    \subitem {t31}, \hyperpage{35}
+    \subitem {t32}, \hyperpage{35}
+    \subitem {t33}, \hyperpage{35}
+    \subitem {t34}, \hyperpage{35}
+    \subitem {t35}, \hyperpage{35}
+    \subitem {t36}, \hyperpage{35}
+    \subitem {t37}, \hyperpage{35}
+    \subitem {t4}, \hyperpage{35}
+    \subitem {t5}, \hyperpage{35}
+    \subitem {t6}, \hyperpage{36}
+    \subitem {t7}, \hyperpage{36}
+    \subitem {t8}, \hyperpage{36}
+    \subitem {t9}, \hyperpage{36}
+    \subitem {total}, \hyperpage{36}
+  \item {total}
+    \subitem {test\_main.cpp}, \hyperpage{36}
+
+  \indexspace
+
+  \item {users}
+    \subitem {AuthDatabase}, \hyperpage{8}
+
+  \indexspace
+
+  \item {VectorProcessor}, \hyperpage{21}
+    \subitem {sumVector}, \hyperpage{22}
+  \item {VectorProcessor.cpp}, \hyperpage{36}
+    \subitem {MAX\_UINT32}, \hyperpage{37}
+  \item {VectorProcessor.h}, \hyperpage{37}
+  \item {verify}
+    \subitem {Authenticator}, \hyperpage{10}
+
+  \indexspace
+
+  \item {WARNING}
+    \subitem {Logger.h}, \hyperpage{27}
+
+\end{theindex}

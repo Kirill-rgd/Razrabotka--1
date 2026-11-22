@@ -1,0 +1,32 @@
+\doxysection{Файл Authenticator.\+h}
+\hypertarget{Authenticator_8h}{}\label{Authenticator_8h}\index{Authenticator.h@{Authenticator.h}}
+
+
+Модуль аутентификации с использованием SHA-\/224.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}Logger.\+h"{}}\newline
+Граф включаемых заголовочных файлов для Authenticator.\+h\+:
+% FIG 0
+Граф файлов, в которые включается этот файл\+:
+% FIG 1
+\doxysubsubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classAuthenticator}{Authenticator}}
+\begin{DoxyCompactList}\small\item\em Класс аутентификации \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Модуль аутентификации с использованием SHA-\/224. 
+
+Реализует схему аутентификации с солью\+: HASH = SHA224(SALT \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} PASSWORD). Соль и хеш представляются в виде hex-\/строк фиксированной длины. \begin{DoxyAuthor}{Автор}
+Влазнев К.\+П. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2026-\/11-\/19 
+\end{DoxyDate}

@@ -1,0 +1,58 @@
+\doxysection{Файл main.\+cpp}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Точка входа сервера обработки векторов  
+
+
+{\ttfamily \#include "{}Server.\+h"{}}\newline
+{\ttfamily \#include "{}Server\+Config.\+h"{}}\newline
+{\ttfamily \#include "{}Exceptions.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Точка входа программы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Точка входа сервера обработки векторов 
+
+Сетевой сервер с подсистемой аутентификации SHA-\/224. Принимает подключения клиентов, выполняет аутентификацию и вычисляет сумму векторов uint32\+\_\+t. Все ошибки логируются в файл журнала, а критические выводятся в стандартный поток ошибок. \begin{DoxyWarning}{Предупреждения}
+Требуется обязательный параметр --run для запуска сервера 
+\end{DoxyWarning}
+\begin{DoxyAuthor}{Автор}
+Влазнев К.\+П. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2026-\/11-\/20 
+\end{DoxyDate}
+
+
+\doxysubsection{Функции}
+\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Точка входа программы 
+
+Парсит параметры командной строки, выводит справку при необходимости, создаёт и запускает сервер. Обрабатывает исключения сетевого уровня, конфигурации и общие исключения std\+::exception. 
+\begin{DoxyParams}{Аргументы}
+{\em argc} & количество аргументов командной строки \\
+\hline
+{\em argv} & массив строк с аргументами \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 при успешном завершении, 1 при ошибке 
+\end{DoxyReturn}

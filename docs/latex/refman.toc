@@ -1,0 +1,172 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{\numberline {1}Иерархический список классов}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Иерархия классов}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Алфавитный указатель классов}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Классы}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Список файлов}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Файлы}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Классы}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Класс Auth\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Database}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Подробное описание}{7}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Методы}{7}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}findUser()}{7}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}load()}{8}{subsubsection.4.1.2.2}%
+\contentsline {subsection}{\numberline {4.1.3}Данные класса}{8}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}users}{8}{subsubsection.4.1.3.1}%
+\contentsline {section}{\numberline {4.2}Класс Authenticator}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Подробное описание}{9}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Методы}{9}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}computeHash()}{9}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}generateSalt16()}{9}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.3}parseAuthMessage()}{10}{subsubsection.4.2.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.2.4}verify()}{10}{subsubsection.4.2.2.4}%
+\contentsline {section}{\numberline {4.3}Класс Auth\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Error}{10}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Конструктор(ы)}{11}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}AuthError()}{11}{subsubsection.4.3.1.1}%
+\contentsline {section}{\numberline {4.4}Класс Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Error}{11}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Конструктор(ы)}{11}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}ConfigError()}{11}{subsubsection.4.4.1.1}%
+\contentsline {section}{\numberline {4.5}Класс IOError}{12}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Конструктор(ы)}{12}{subsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.1}IOError()}{12}{subsubsection.4.5.1.1}%
+\contentsline {section}{\numberline {4.6}Класс Logger}{12}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Подробное описание}{13}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Конструктор(ы)}{13}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}Logger()}{13}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}$\sim $Logger()}{13}{subsubsection.4.6.2.2}%
+\contentsline {subsection}{\numberline {4.6.3}Методы}{14}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}getCurrentTime()}{14}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}levelToString()}{14}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}log()}{14}{subsubsection.4.6.3.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.4}logError()}{14}{subsubsection.4.6.3.4}%
+\contentsline {subsubsection}{\numberline {4.6.3.5}logInfo()}{14}{subsubsection.4.6.3.5}%
+\contentsline {subsubsection}{\numberline {4.6.3.6}logWarning()}{15}{subsubsection.4.6.3.6}%
+\contentsline {subsection}{\numberline {4.6.4}Данные класса}{15}{subsection.4.6.4}%
+\contentsline {subsubsection}{\numberline {4.6.4.1}logFile}{15}{subsubsection.4.6.4.1}%
+\contentsline {subsubsection}{\numberline {4.6.4.2}logFilePath}{15}{subsubsection.4.6.4.2}%
+\contentsline {subsubsection}{\numberline {4.6.4.3}logMutex}{15}{subsubsection.4.6.4.3}%
+\contentsline {section}{\numberline {4.7}Класс Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Error}{15}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Конструктор(ы)}{16}{subsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.1.1}NetworkError()}{16}{subsubsection.4.7.1.1}%
+\contentsline {section}{\numberline {4.8}Класс Program\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Error}{16}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Конструктор(ы)}{16}{subsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.1.1}ProgramError()}{16}{subsubsection.4.8.1.1}%
+\contentsline {section}{\numberline {4.9}Класс Server}{16}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Конструктор(ы)}{17}{subsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.1.1}Server()}{17}{subsubsection.4.9.1.1}%
+\contentsline {subsubsection}{\numberline {4.9.1.2}$\sim $Server()}{17}{subsubsection.4.9.1.2}%
+\contentsline {subsection}{\numberline {4.9.2}Методы}{17}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}acceptConnection()}{17}{subsubsection.4.9.2.1}%
+\contentsline {subsubsection}{\numberline {4.9.2.2}authenticate()}{17}{subsubsection.4.9.2.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.3}initSocket()}{18}{subsubsection.4.9.2.3}%
+\contentsline {subsubsection}{\numberline {4.9.2.4}processVectors()}{18}{subsubsection.4.9.2.4}%
+\contentsline {subsubsection}{\numberline {4.9.2.5}receiveBinary()}{18}{subsubsection.4.9.2.5}%
+\contentsline {subsubsection}{\numberline {4.9.2.6}receiveText()}{18}{subsubsection.4.9.2.6}%
+\contentsline {subsubsection}{\numberline {4.9.2.7}run()}{18}{subsubsection.4.9.2.7}%
+\contentsline {subsubsection}{\numberline {4.9.2.8}sendBinary()}{18}{subsubsection.4.9.2.8}%
+\contentsline {subsubsection}{\numberline {4.9.2.9}sendText()}{18}{subsubsection.4.9.2.9}%
+\contentsline {subsubsection}{\numberline {4.9.2.10}start()}{18}{subsubsection.4.9.2.10}%
+\contentsline {subsection}{\numberline {4.9.3}Данные класса}{19}{subsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.1}db}{19}{subsubsection.4.9.3.1}%
+\contentsline {subsubsection}{\numberline {4.9.3.2}logger}{19}{subsubsection.4.9.3.2}%
+\contentsline {subsubsection}{\numberline {4.9.3.3}params}{19}{subsubsection.4.9.3.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.4}serverSocket}{19}{subsubsection.4.9.3.4}%
+\contentsline {section}{\numberline {4.10}Класс Server\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config}{19}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Подробное описание}{19}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Методы}{19}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}parseArgs()}{19}{subsubsection.4.10.2.1}%
+\contentsline {subsubsection}{\numberline {4.10.2.2}showHelp()}{20}{subsubsection.4.10.2.2}%
+\contentsline {section}{\numberline {4.11}Структура Server\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Params}{20}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Подробное описание}{20}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Конструктор(ы)}{21}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}ServerParams()}{21}{subsubsection.4.11.2.1}%
+\contentsline {subsection}{\numberline {4.11.3}Данные класса}{21}{subsection.4.11.3}%
+\contentsline {subsubsection}{\numberline {4.11.3.1}dbPath}{21}{subsubsection.4.11.3.1}%
+\contentsline {subsubsection}{\numberline {4.11.3.2}isRun}{21}{subsubsection.4.11.3.2}%
+\contentsline {subsubsection}{\numberline {4.11.3.3}logPath}{21}{subsubsection.4.11.3.3}%
+\contentsline {subsubsection}{\numberline {4.11.3.4}port}{21}{subsubsection.4.11.3.4}%
+\contentsline {subsubsection}{\numberline {4.11.3.5}showHelp}{21}{subsubsection.4.11.3.5}%
+\contentsline {section}{\numberline {4.12}Класс Vector\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Processor}{21}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Подробное описание}{22}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Методы}{22}{subsection.4.12.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.1}sumVector()}{22}{subsubsection.4.12.2.1}%
+\contentsline {chapter}{\numberline {5}Файлы}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Файл Auth\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Database.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Файл Auth\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Database.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{23}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Подробное описание}{23}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Auth\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Database.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{24}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Файл Authenticator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{24}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Файл Authenticator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{24}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Подробное описание}{24}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Authenticator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{25}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Файл Exceptions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{25}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Exceptions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{25}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Файл Logger.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{26}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Файл Logger.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{26}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Подробное описание}{26}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.10.2}Перечисления}{26}{subsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.1}LogLevel}{26}{subsubsection.5.10.2.1}%
+\contentsline {section}{\numberline {5.11}Logger.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{27}{section.5.11}%
+\contentsline {section}{\numberline {5.12}Файл main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{27}{section.5.12}%
+\contentsline {subsection}{\numberline {5.12.1}Подробное описание}{28}{subsection.5.12.1}%
+\contentsline {subsection}{\numberline {5.12.2}Функции}{28}{subsection.5.12.2}%
+\contentsline {subsubsection}{\numberline {5.12.2.1}main()}{28}{subsubsection.5.12.2.1}%
+\contentsline {section}{\numberline {5.13}Файл Server.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{28}{section.5.13}%
+\contentsline {section}{\numberline {5.14}Файл Server.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{29}{section.5.14}%
+\contentsline {section}{\numberline {5.15}Server.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{29}{section.5.15}%
+\contentsline {section}{\numberline {5.16}Файл Server\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{30}{section.5.16}%
+\contentsline {section}{\numberline {5.17}Файл Server\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{30}{section.5.17}%
+\contentsline {subsection}{\numberline {5.17.1}Подробное описание}{30}{subsection.5.17.1}%
+\contentsline {section}{\numberline {5.18}Server\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{31}{section.5.18}%
+\contentsline {section}{\numberline {5.19}Файл test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{31}{section.5.19}%
+\contentsline {subsection}{\numberline {5.19.1}Функции}{32}{subsection.5.19.1}%
+\contentsline {subsubsection}{\numberline {5.19.1.1}check()}{32}{subsubsection.5.19.1.1}%
+\contentsline {subsubsection}{\numberline {5.19.1.2}log\_contains()}{32}{subsubsection.5.19.1.2}%
+\contentsline {subsubsection}{\numberline {5.19.1.3}main()}{32}{subsubsection.5.19.1.3}%
+\contentsline {subsubsection}{\numberline {5.19.1.4}t1()}{33}{subsubsection.5.19.1.4}%
+\contentsline {subsubsection}{\numberline {5.19.1.5}t10()}{33}{subsubsection.5.19.1.5}%
+\contentsline {subsubsection}{\numberline {5.19.1.6}t11()}{33}{subsubsection.5.19.1.6}%
+\contentsline {subsubsection}{\numberline {5.19.1.7}t12()}{33}{subsubsection.5.19.1.7}%
+\contentsline {subsubsection}{\numberline {5.19.1.8}t15()}{33}{subsubsection.5.19.1.8}%
+\contentsline {subsubsection}{\numberline {5.19.1.9}t16()}{33}{subsubsection.5.19.1.9}%
+\contentsline {subsubsection}{\numberline {5.19.1.10}t17()}{33}{subsubsection.5.19.1.10}%
+\contentsline {subsubsection}{\numberline {5.19.1.11}t18()}{33}{subsubsection.5.19.1.11}%
+\contentsline {subsubsection}{\numberline {5.19.1.12}t19()}{33}{subsubsection.5.19.1.12}%
+\contentsline {subsubsection}{\numberline {5.19.1.13}t2()}{33}{subsubsection.5.19.1.13}%
+\contentsline {subsubsection}{\numberline {5.19.1.14}t20()}{34}{subsubsection.5.19.1.14}%
+\contentsline {subsubsection}{\numberline {5.19.1.15}t21()}{34}{subsubsection.5.19.1.15}%
+\contentsline {subsubsection}{\numberline {5.19.1.16}t22()}{34}{subsubsection.5.19.1.16}%
+\contentsline {subsubsection}{\numberline {5.19.1.17}t23()}{34}{subsubsection.5.19.1.17}%
+\contentsline {subsubsection}{\numberline {5.19.1.18}t24()}{34}{subsubsection.5.19.1.18}%
+\contentsline {subsubsection}{\numberline {5.19.1.19}t25()}{34}{subsubsection.5.19.1.19}%
+\contentsline {subsubsection}{\numberline {5.19.1.20}t26()}{34}{subsubsection.5.19.1.20}%
+\contentsline {subsubsection}{\numberline {5.19.1.21}t27()}{34}{subsubsection.5.19.1.21}%
+\contentsline {subsubsection}{\numberline {5.19.1.22}t28()}{34}{subsubsection.5.19.1.22}%
+\contentsline {subsubsection}{\numberline {5.19.1.23}t29()}{34}{subsubsection.5.19.1.23}%
+\contentsline {subsubsection}{\numberline {5.19.1.24}t3()}{35}{subsubsection.5.19.1.24}%
+\contentsline {subsubsection}{\numberline {5.19.1.25}t30()}{35}{subsubsection.5.19.1.25}%
+\contentsline {subsubsection}{\numberline {5.19.1.26}t31()}{35}{subsubsection.5.19.1.26}%
+\contentsline {subsubsection}{\numberline {5.19.1.27}t32()}{35}{subsubsection.5.19.1.27}%
+\contentsline {subsubsection}{\numberline {5.19.1.28}t33()}{35}{subsubsection.5.19.1.28}%
+\contentsline {subsubsection}{\numberline {5.19.1.29}t34()}{35}{subsubsection.5.19.1.29}%
+\contentsline {subsubsection}{\numberline {5.19.1.30}t35()}{35}{subsubsection.5.19.1.30}%
+\contentsline {subsubsection}{\numberline {5.19.1.31}t36()}{35}{subsubsection.5.19.1.31}%
+\contentsline {subsubsection}{\numberline {5.19.1.32}t37()}{35}{subsubsection.5.19.1.32}%
+\contentsline {subsubsection}{\numberline {5.19.1.33}t4()}{35}{subsubsection.5.19.1.33}%
+\contentsline {subsubsection}{\numberline {5.19.1.34}t5()}{36}{subsubsection.5.19.1.34}%
+\contentsline {subsubsection}{\numberline {5.19.1.35}t6()}{36}{subsubsection.5.19.1.35}%
+\contentsline {subsubsection}{\numberline {5.19.1.36}t7()}{36}{subsubsection.5.19.1.36}%
+\contentsline {subsubsection}{\numberline {5.19.1.37}t8()}{36}{subsubsection.5.19.1.37}%
+\contentsline {subsubsection}{\numberline {5.19.1.38}t9()}{36}{subsubsection.5.19.1.38}%
+\contentsline {subsection}{\numberline {5.19.2}Переменные}{36}{subsection.5.19.2}%
+\contentsline {subsubsection}{\numberline {5.19.2.1}failed}{36}{subsubsection.5.19.2.1}%
+\contentsline {subsubsection}{\numberline {5.19.2.2}passed}{36}{subsubsection.5.19.2.2}%
+\contentsline {subsubsection}{\numberline {5.19.2.3}total}{36}{subsubsection.5.19.2.3}%
+\contentsline {section}{\numberline {5.20}Файл Vector\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Processor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{36}{section.5.20}%
+\contentsline {subsection}{\numberline {5.20.1}Переменные}{37}{subsection.5.20.1}%
+\contentsline {subsubsection}{\numberline {5.20.1.1}MAX\_UINT32}{37}{subsubsection.5.20.1.1}%
+\contentsline {section}{\numberline {5.21}Файл Vector\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Processor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{37}{section.5.21}%
+\contentsline {subsection}{\numberline {5.21.1}Подробное описание}{37}{subsection.5.21.1}%
+\contentsline {section}{\numberline {5.22}Vector\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Processor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{37}{section.5.22}%
+\contentsline {chapter}{{\cyrillictext \CYRP \cyrr \cyre \cyrd \cyrm \cyre \cyrt \cyrn \cyrery \cyrishrt \ \cyru \cyrk \cyra \cyrz \cyra \cyrt \cyre \cyrl \cyrsftsn }}{39}{section*.35}%

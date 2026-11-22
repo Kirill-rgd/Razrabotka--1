@@ -1,0 +1,7 @@
+\doxysection{Файл Auth\+Database.\+cpp}
+\hypertarget{AuthDatabase_8cpp}{}\label{AuthDatabase_8cpp}\index{AuthDatabase.cpp@{AuthDatabase.cpp}}
+{\ttfamily \#include "{}Auth\+Database.\+h"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Граф включаемых заголовочных файлов для Auth\+Database.\+cpp\+:
+% FIG 0

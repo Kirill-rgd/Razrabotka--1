@@ -1,0 +1,92 @@
+\doxysection{Класс Auth\+Database}
+\hypertarget{classAuthDatabase}{}\label{classAuthDatabase}\index{AuthDatabase@{AuthDatabase}}
+
+
+Класс базы аутентификации  
+
+
+
+
+{\ttfamily \#include $<$Auth\+Database.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classAuthDatabase_aa7eff580ef4967af51b8e5b8bfafae5b}{load}} (const std\+::string \&path, \mbox{\hyperlink{classLogger}{Logger}} \&logger)
+\begin{DoxyCompactList}\small\item\em Загрузка базы пользователей из файла \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAuthDatabase_ad732fb52ea62a6d98f532c975e562388}{find\+User}} (const std\+::string \&login, std\+::string \&password) const
+\begin{DoxyCompactList}\small\item\em Поиск пользователя по логину \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classAuthDatabase_a4703afcede3d512b6a0fd0437d43a722}{users}}
+\begin{DoxyCompactList}\small\item\em Карта пар логин-\/пароль \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс базы аутентификации 
+
+Хранит учетные записи в ассоциативном массиве и предоставляет методы для загрузки из файла и поиска пользователя. 
+
+\doxysubsection{Методы}
+\Hypertarget{classAuthDatabase_ad732fb52ea62a6d98f532c975e562388}\label{classAuthDatabase_ad732fb52ea62a6d98f532c975e562388} 
+\index{AuthDatabase@{AuthDatabase}!findUser@{findUser}}
+\index{findUser@{findUser}!AuthDatabase@{AuthDatabase}}
+\doxysubsubsection{\texorpdfstring{findUser()}{findUser()}}
+{\footnotesize\ttfamily bool Auth\+Database\+::find\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{login,  }\item[{std\+::string \&}]{password }\end{DoxyParamCaption}) const}
+
+
+
+Поиск пользователя по логину 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & искомый логин \\
+\hline
+{\em password\mbox{[}out\mbox{]}} & пароль пользователя, если найден \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если пользователь найден, false иначе 
+\end{DoxyReturn}
+\Hypertarget{classAuthDatabase_aa7eff580ef4967af51b8e5b8bfafae5b}\label{classAuthDatabase_aa7eff580ef4967af51b8e5b8bfafae5b} 
+\index{AuthDatabase@{AuthDatabase}!load@{load}}
+\index{load@{load}!AuthDatabase@{AuthDatabase}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Auth\+Database\+::load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{classLogger}{Logger}} \&}]{logger }\end{DoxyParamCaption})}
+
+
+
+Загрузка базы пользователей из файла 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path} & путь к файлу базы (формат\+: login\+:password) \\
+\hline
+{\em logger} & объект журнала для записи событий загрузки \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classIOError}{IOError}} & если файл не найден или не удалось открыть \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{classAuthDatabase_a4703afcede3d512b6a0fd0437d43a722}\label{classAuthDatabase_a4703afcede3d512b6a0fd0437d43a722} 
+\index{AuthDatabase@{AuthDatabase}!users@{users}}
+\index{users@{users}!AuthDatabase@{AuthDatabase}}
+\doxysubsubsection{\texorpdfstring{users}{users}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ Auth\+Database\+::users\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Карта пар логин-\/пароль 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{AuthDatabase_8h}{Auth\+Database.\+h}}\item 
+\mbox{\hyperlink{AuthDatabase_8cpp}{Auth\+Database.\+cpp}}\end{DoxyCompactItemize}

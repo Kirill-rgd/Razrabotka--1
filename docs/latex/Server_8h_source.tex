@@ -1,0 +1,40 @@
+\doxysection{Server.\+h}
+\hypertarget{Server_8h_source}{}\label{Server_8h_source}\mbox{\hyperlink{Server_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ServerConfig_8h}{ServerConfig.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Logger_8h}{Logger.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{AuthDatabase_8h}{AuthDatabase.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Authenticator_8h}{Authenticator.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{VectorProcessor_8h}{VectorProcessor.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <sys/socket.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <netinet/in.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classServer}{Server}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{structServerParams}{ServerParams}}\ \mbox{\hyperlink{classServer_a78e5d8e7b47afd9fb4e99c93ed2adbda}{params}};}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classLogger}{Logger}}\ \mbox{\hyperlink{classServer_ab50b5b20130564ba7e9a12032070882f}{logger}};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classAuthDatabase}{AuthDatabase}}\ \mbox{\hyperlink{classServer_ac5420560f902ecc714acce3cc5e07b15}{db}};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classServer_a0e1f90d176dd31898b84088e6f4c1d87}{serverSocket}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classServer_aca65ccc4851e82e06e062b99b1d51448}{initSocket}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classServer_a7eac07d2582fa01c2671362efa955b31}{start}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classServer_aa3a6667cccd7401040326aa9147ede32}{acceptConnection}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classServer_a0b81799c5602b320ff59a1800422f255}{authenticate}}(\textcolor{keywordtype}{int}\ clientSocket,\ std::string\&\ login);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classServer_acedcde7409c82e846bdb9afc8002dd00}{processVectors}}(\textcolor{keywordtype}{int}\ clientSocket);}
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ \mbox{\hyperlink{classServer_a219e47985780910c51fdaba67ade652a}{receiveText}}(\textcolor{keywordtype}{int}\ clientSocket);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classServer_a4835fa598a03ccf7cd0f1ba335cadf18}{sendText}}(\textcolor{keywordtype}{int}\ clientSocket,\ \textcolor{keyword}{const}\ std::string\&\ msg);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classServer_a5fd2e10187fcbeb10af4cb36ca0b3980}{sendBinary}}(\textcolor{keywordtype}{int}\ clientSocket,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ data,\ \textcolor{keywordtype}{size\_t}\ size);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classServer_abf4ff193caa8f24ced98c4be72c20c3f}{receiveBinary}}(\textcolor{keywordtype}{int}\ clientSocket,\ \textcolor{keywordtype}{void}*\ data,\ \textcolor{keywordtype}{size\_t}\ size);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classServer}{Server}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structServerParams}{ServerParams}}\&\ p);}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}{\string~Server}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classServer_abb27d30b40a94326e3fd629d3b30b7d5}{run}}();}
+\DoxyCodeLine{00035\ \};}
+
+\end{DoxyCode}

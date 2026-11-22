@@ -1,0 +1,112 @@
+\doxysection{Класс Authenticator}
+\hypertarget{classAuthenticator}{}\label{classAuthenticator}\index{Authenticator@{Authenticator}}
+
+
+Класс аутентификации  
+
+
+
+
+{\ttfamily \#include $<$Authenticator.\+h$>$}
+
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classAuthenticator_a79a524bc20bbd4d560d144db04221cfb}{generate\+Salt16}} ()
+\begin{DoxyCompactList}\small\item\em Генерация случайной соли длиной 16 символов (hex) \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classAuthenticator_ae2a548e4113ce3480a53761a2a024a2e}{compute\+Hash}} (const std\+::string \&salt16, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Вычисление хеша SHA-\/224 от конкатенации соли и пароля \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classAuthenticator_a70289b9c0ae36433763a9f7e8097f71d}{verify}} (const std\+::string \&salt16, const std\+::string \&password, const std\+::string \&received\+Hash)
+\begin{DoxyCompactList}\small\item\em Проверка хеша с использованием Hash\+Verification\+Filter. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classAuthenticator_aea1624282119a49d78dd866919a6225c}{parse\+Auth\+Message}} (const std\+::string \&msg, std\+::string \&login, std\+::string \&salt, std\+::string \&hash)
+\begin{DoxyCompactList}\small\item\em Разбор аутентификационного сообщения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс аутентификации 
+
+Предоставляет статические методы для генерации соли, вычисления и проверки хешей, а также разбора аутентификационных сообщений. 
+
+\doxysubsection{Методы}
+\Hypertarget{classAuthenticator_ae2a548e4113ce3480a53761a2a024a2e}\label{classAuthenticator_ae2a548e4113ce3480a53761a2a024a2e} 
+\index{Authenticator@{Authenticator}!computeHash@{computeHash}}
+\index{computeHash@{computeHash}!Authenticator@{Authenticator}}
+\doxysubsubsection{\texorpdfstring{computeHash()}{computeHash()}}
+{\footnotesize\ttfamily std\+::string Authenticator\+::compute\+Hash (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{salt16,  }\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вычисление хеша SHA-\/224 от конкатенации соли и пароля 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em salt16} & соль в виде hex-\/строки (16 символов) \\
+\hline
+{\em password} & пароль клиента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+хеш в виде hex-\/строки (56 символов) 
+\end{DoxyReturn}
+\Hypertarget{classAuthenticator_a79a524bc20bbd4d560d144db04221cfb}\label{classAuthenticator_a79a524bc20bbd4d560d144db04221cfb} 
+\index{Authenticator@{Authenticator}!generateSalt16@{generateSalt16}}
+\index{generateSalt16@{generateSalt16}!Authenticator@{Authenticator}}
+\doxysubsubsection{\texorpdfstring{generateSalt16()}{generateSalt16()}}
+{\footnotesize\ttfamily std\+::string Authenticator\+::generate\+Salt16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Генерация случайной соли длиной 16 символов (hex) 
+
+\begin{DoxyReturn}{Возвращает}
+Строка с шестнадцатеричным представлением соли 
+\end{DoxyReturn}
+\Hypertarget{classAuthenticator_aea1624282119a49d78dd866919a6225c}\label{classAuthenticator_aea1624282119a49d78dd866919a6225c} 
+\index{Authenticator@{Authenticator}!parseAuthMessage@{parseAuthMessage}}
+\index{parseAuthMessage@{parseAuthMessage}!Authenticator@{Authenticator}}
+\doxysubsubsection{\texorpdfstring{parseAuthMessage()}{parseAuthMessage()}}
+{\footnotesize\ttfamily void Authenticator\+::parse\+Auth\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg,  }\item[{std\+::string \&}]{login,  }\item[{std\+::string \&}]{salt,  }\item[{std\+::string \&}]{hash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Разбор аутентификационного сообщения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em msg} & сообщение формата LOGIN+\+SALT+\+HASH \\
+\hline
+{\em login\mbox{[}out\mbox{]}} & извлечённый логин \\
+\hline
+{\em salt\mbox{[}out\mbox{]}} & извлечённая соль (16 символов) \\
+\hline
+{\em hash\mbox{[}out\mbox{]}} & извлечённый хеш (56 символов) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAuthenticator_a70289b9c0ae36433763a9f7e8097f71d}\label{classAuthenticator_a70289b9c0ae36433763a9f7e8097f71d} 
+\index{Authenticator@{Authenticator}!verify@{verify}}
+\index{verify@{verify}!Authenticator@{Authenticator}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily bool Authenticator\+::verify (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{salt16,  }\item[{const std\+::string \&}]{password,  }\item[{const std\+::string \&}]{received\+Hash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Проверка хеша с использованием Hash\+Verification\+Filter. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em salt16} & соль \\
+\hline
+{\em password} & пароль \\
+\hline
+{\em received\+Hash} & ожидаемый хеш от клиента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если хеш совпадает, false иначе 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Authenticator_8h}{Authenticator.\+h}}\item 
+\mbox{\hyperlink{Authenticator_8cpp}{Authenticator.\+cpp}}\end{DoxyCompactItemize}

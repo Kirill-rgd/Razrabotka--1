@@ -1,0 +1,18 @@
+\doxysection{Auth\+Database.\+h}
+\hypertarget{AuthDatabase_8h_source}{}\label{AuthDatabase_8h_source}\mbox{\hyperlink{AuthDatabase_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Exceptions_8h}{Exceptions.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Logger_8h}{Logger.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAuthDatabase}{AuthDatabase}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ std::map<std::string,\ std::string>\ \mbox{\hyperlink{classAuthDatabase_a4703afcede3d512b6a0fd0437d43a722}{users}};\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAuthDatabase_aa7eff580ef4967af51b8e5b8bfafae5b}{load}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \mbox{\hyperlink{classLogger}{Logger}}\&\ logger);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classAuthDatabase_ad732fb52ea62a6d98f532c975e562388}{findUser}}(\textcolor{keyword}{const}\ std::string\&\ login,\ std::string\&\ password)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \};}
+
+\end{DoxyCode}

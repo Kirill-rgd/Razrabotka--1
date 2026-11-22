@@ -1,0 +1,56 @@
+\doxysection{Класс Server\+Config}
+\hypertarget{classServerConfig}{}\label{classServerConfig}\index{ServerConfig@{ServerConfig}}
+
+
+Класс разбора параметров командной строки  
+
+
+
+
+{\ttfamily \#include $<$Server\+Config.\+h$>$}
+
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structServerParams}{Server\+Params}} \mbox{\hyperlink{classServerConfig_a0315905f5dd209407d43f362c5602a39}{parse\+Args}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Разбор аргументов командной строки \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classServerConfig_aa437d8e88b53131cdb76f9ca3bc512f5}{show\+Help}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс разбора параметров командной строки 
+
+\doxysubsection{Методы}
+\Hypertarget{classServerConfig_a0315905f5dd209407d43f362c5602a39}\label{classServerConfig_a0315905f5dd209407d43f362c5602a39} 
+\index{ServerConfig@{ServerConfig}!parseArgs@{parseArgs}}
+\index{parseArgs@{parseArgs}!ServerConfig@{ServerConfig}}
+\doxysubsubsection{\texorpdfstring{parseArgs()}{parseArgs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structServerParams}{Server\+Params}} Server\+Config\+::parse\+Args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Разбор аргументов командной строки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & количество аргументов \\
+\hline
+{\em argv} & массив аргументов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+структура \doxylink{structServerParams}{Server\+Params} с разобранными параметрами 
+\end{DoxyReturn}
+\Hypertarget{classServerConfig_aa437d8e88b53131cdb76f9ca3bc512f5}\label{classServerConfig_aa437d8e88b53131cdb76f9ca3bc512f5} 
+\index{ServerConfig@{ServerConfig}!showHelp@{showHelp}}
+\index{showHelp@{showHelp}!ServerConfig@{ServerConfig}}
+\doxysubsubsection{\texorpdfstring{showHelp()}{showHelp()}}
+{\footnotesize\ttfamily void Server\+Config\+::show\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ServerConfig_8h}{Server\+Config.\+h}}\item 
+\mbox{\hyperlink{ServerConfig_8cpp}{Server\+Config.\+cpp}}\end{DoxyCompactItemize}

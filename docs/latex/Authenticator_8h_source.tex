@@ -1,0 +1,16 @@
+\doxysection{Authenticator.\+h}
+\hypertarget{Authenticator_8h_source}{}\label{Authenticator_8h_source}\mbox{\hyperlink{Authenticator_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Logger_8h}{Logger.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAuthenticator}{Authenticator}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ std::string\ \mbox{\hyperlink{classAuthenticator_a79a524bc20bbd4d560d144db04221cfb}{generateSalt16}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ std::string\ \mbox{\hyperlink{classAuthenticator_ae2a548e4113ce3480a53761a2a024a2e}{computeHash}}(\textcolor{keyword}{const}\ std::string\&\ salt16,\ \textcolor{keyword}{const}\ std::string\&\ password);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classAuthenticator_a70289b9c0ae36433763a9f7e8097f71d}{verify}}(\textcolor{keyword}{const}\ std::string\&\ salt16,\ \textcolor{keyword}{const}\ std::string\&\ password,\ \textcolor{keyword}{const}\ std::string\&\ receivedHash);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAuthenticator_aea1624282119a49d78dd866919a6225c}{parseAuthMessage}}(\textcolor{keyword}{const}\ std::string\&\ msg,\ std::string\&\ login,\ std::string\&\ salt,\ std::string\&\ hash);}
+\DoxyCodeLine{00048\ \};}
+
+\end{DoxyCode}

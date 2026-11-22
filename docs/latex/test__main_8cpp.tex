@@ -1,0 +1,357 @@
+\doxysection{Файл test\+\_\+main.\+cpp}
+\hypertarget{test__main_8cpp}{}\label{test__main_8cpp}\index{test\_main.cpp@{test\_main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include "{}Server\+Config.\+h"{}}\newline
+{\ttfamily \#include "{}Auth\+Database.\+h"{}}\newline
+{\ttfamily \#include "{}Authenticator.\+h"{}}\newline
+{\ttfamily \#include "{}Vector\+Processor.\+h"{}}\newline
+{\ttfamily \#include "{}Logger.\+h"{}}\newline
+Граф включаемых заголовочных файлов для test\+\_\+main.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{test__main_8cpp_aba61dd0631fe5aab2e8c5bcf9ea91d42}{check}} (int n, const string \&desc, bool cond)
+\item 
+bool \mbox{\hyperlink{test__main_8cpp_acfbd80ff147f8c757e384c00b8522746}{log\+\_\+contains}} (const string \&file, const string \&text, const string \&tag)
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a78ed8c1d641408a085543aa2d77ed93f}{t1}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a76cb230c0ffd18dba5932a1677e6866a}{t2}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a4d5ee84ab333815f3c657fbabf7e50a2}{t3}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a754d0ab5be33ddec5181bef135142968}{t4}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a4786b0a503ccf0d55f9b0b7864537c7b}{t5}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_ac2ff091ef7a1c6c41735538469db77a0}{t6}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a6854c5c90940f611c765c36609c07318}{t7}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a9619ae4409cc84472157f6f7deda27ed}{t8}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_affe4cec5b284b991f5d1879217f87112}{t9}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_ada74d9c355fe4ac863de94f5784c399c}{t10}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a9837a8db7d6ece5a9f0d8ba7ea57078b}{t11}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a69c9364c23833b932a5d27353bd89f37}{t12}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a90eb8a9b49abb353e16e14b413e1856a}{t15}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_acbe105f4e568d05a87a859ed8093f70d}{t16}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a737b38d02cfcaaaac7a90545fa385c8b}{t17}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a20fefe0be00306dfbf47df514a5faaf4}{t18}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a37790143b185138ee79851fc17d08b7e}{t19}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_afaf1d0ce1050aa4321aa1e405870fad4}{t20}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_afb7d2e111e64f37b65a781fc67b0be0f}{t21}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a7bfd62cbf3648d5313871bc4e07092d8}{t22}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_ab0283cfb5aa773bf00b40567b50cff5c}{t23}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_ac66d8f9d59e27b54e62ce65affdd9633}{t24}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a5c937acac15de6fa3d2048cef4e1bd03}{t25}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a729bdff8f647f21d00e2eda1e69d5ced}{t26}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a0d2015492bf55ef48bacb626d6006a44}{t27}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a3d9d269c0abb4a3194191c0d1da3f845}{t28}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_ab51d30fd352e03d59039ee8c2f8d729a}{t29}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a75ff5bef6652169eecc069eebc19339a}{t30}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a4f62443a2d18fb45674309ef9b04589e}{t31}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a992a1a1cb731bf5d6eb46f845a330b4b}{t32}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_af350edb3ffb82317de65a01caf3dcb88}{t33}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a3b6f2c00ae6c6363ccfb34e23ede5f67}{t34}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a5a82cb5ebbf45e2ed43f27f3d4093722}{t35}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_a3f98f470d94f38abdb3334c2d7702dc3}{t36}} ()
+\item 
+void \mbox{\hyperlink{test__main_8cpp_aafba79f00e1e720519cdd336ed3c93f9}{t37}} ()
+\item 
+int \mbox{\hyperlink{test__main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{test__main_8cpp_ac7af894858cf396a219d632f40afdc8d}{total}} = 0
+\item 
+int \mbox{\hyperlink{test__main_8cpp_a561a5450b127e97c5ca67d0b349747a8}{passed}} = 0
+\item 
+int \mbox{\hyperlink{test__main_8cpp_ad4ec5aab9b62fbbe9b8fc2d8ac0a5989}{failed}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\Hypertarget{test__main_8cpp_aba61dd0631fe5aab2e8c5bcf9ea91d42}\label{test__main_8cpp_aba61dd0631fe5aab2e8c5bcf9ea91d42} 
+\index{test\_main.cpp@{test\_main.cpp}!check@{check}}
+\index{check@{check}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily void check (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{const string \&}]{desc,  }\item[{bool}]{cond }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_acfbd80ff147f8c757e384c00b8522746}\label{test__main_8cpp_acfbd80ff147f8c757e384c00b8522746} 
+\index{test\_main.cpp@{test\_main.cpp}!log\_contains@{log\_contains}}
+\index{log\_contains@{log\_contains}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{log\_contains()}{log\_contains()}}
+{\footnotesize\ttfamily bool log\+\_\+contains (\begin{DoxyParamCaption}\item[{const string \&}]{file,  }\item[{const string \&}]{text,  }\item[{const string \&}]{tag }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{test__main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{test\_main.cpp@{test\_main.cpp}!main@{main}}
+\index{main@{main}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a78ed8c1d641408a085543aa2d77ed93f}\label{test__main_8cpp_a78ed8c1d641408a085543aa2d77ed93f} 
+\index{test\_main.cpp@{test\_main.cpp}!t1@{t1}}
+\index{t1@{t1}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t1()}{t1()}}
+{\footnotesize\ttfamily void t1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_ada74d9c355fe4ac863de94f5784c399c}\label{test__main_8cpp_ada74d9c355fe4ac863de94f5784c399c} 
+\index{test\_main.cpp@{test\_main.cpp}!t10@{t10}}
+\index{t10@{t10}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t10()}{t10()}}
+{\footnotesize\ttfamily void t10 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a9837a8db7d6ece5a9f0d8ba7ea57078b}\label{test__main_8cpp_a9837a8db7d6ece5a9f0d8ba7ea57078b} 
+\index{test\_main.cpp@{test\_main.cpp}!t11@{t11}}
+\index{t11@{t11}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t11()}{t11()}}
+{\footnotesize\ttfamily void t11 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a69c9364c23833b932a5d27353bd89f37}\label{test__main_8cpp_a69c9364c23833b932a5d27353bd89f37} 
+\index{test\_main.cpp@{test\_main.cpp}!t12@{t12}}
+\index{t12@{t12}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t12()}{t12()}}
+{\footnotesize\ttfamily void t12 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a90eb8a9b49abb353e16e14b413e1856a}\label{test__main_8cpp_a90eb8a9b49abb353e16e14b413e1856a} 
+\index{test\_main.cpp@{test\_main.cpp}!t15@{t15}}
+\index{t15@{t15}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t15()}{t15()}}
+{\footnotesize\ttfamily void t15 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_acbe105f4e568d05a87a859ed8093f70d}\label{test__main_8cpp_acbe105f4e568d05a87a859ed8093f70d} 
+\index{test\_main.cpp@{test\_main.cpp}!t16@{t16}}
+\index{t16@{t16}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t16()}{t16()}}
+{\footnotesize\ttfamily void t16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a737b38d02cfcaaaac7a90545fa385c8b}\label{test__main_8cpp_a737b38d02cfcaaaac7a90545fa385c8b} 
+\index{test\_main.cpp@{test\_main.cpp}!t17@{t17}}
+\index{t17@{t17}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t17()}{t17()}}
+{\footnotesize\ttfamily void t17 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a20fefe0be00306dfbf47df514a5faaf4}\label{test__main_8cpp_a20fefe0be00306dfbf47df514a5faaf4} 
+\index{test\_main.cpp@{test\_main.cpp}!t18@{t18}}
+\index{t18@{t18}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t18()}{t18()}}
+{\footnotesize\ttfamily void t18 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a37790143b185138ee79851fc17d08b7e}\label{test__main_8cpp_a37790143b185138ee79851fc17d08b7e} 
+\index{test\_main.cpp@{test\_main.cpp}!t19@{t19}}
+\index{t19@{t19}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t19()}{t19()}}
+{\footnotesize\ttfamily void t19 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a76cb230c0ffd18dba5932a1677e6866a}\label{test__main_8cpp_a76cb230c0ffd18dba5932a1677e6866a} 
+\index{test\_main.cpp@{test\_main.cpp}!t2@{t2}}
+\index{t2@{t2}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t2()}{t2()}}
+{\footnotesize\ttfamily void t2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_afaf1d0ce1050aa4321aa1e405870fad4}\label{test__main_8cpp_afaf1d0ce1050aa4321aa1e405870fad4} 
+\index{test\_main.cpp@{test\_main.cpp}!t20@{t20}}
+\index{t20@{t20}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t20()}{t20()}}
+{\footnotesize\ttfamily void t20 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_afb7d2e111e64f37b65a781fc67b0be0f}\label{test__main_8cpp_afb7d2e111e64f37b65a781fc67b0be0f} 
+\index{test\_main.cpp@{test\_main.cpp}!t21@{t21}}
+\index{t21@{t21}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t21()}{t21()}}
+{\footnotesize\ttfamily void t21 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a7bfd62cbf3648d5313871bc4e07092d8}\label{test__main_8cpp_a7bfd62cbf3648d5313871bc4e07092d8} 
+\index{test\_main.cpp@{test\_main.cpp}!t22@{t22}}
+\index{t22@{t22}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t22()}{t22()}}
+{\footnotesize\ttfamily void t22 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_ab0283cfb5aa773bf00b40567b50cff5c}\label{test__main_8cpp_ab0283cfb5aa773bf00b40567b50cff5c} 
+\index{test\_main.cpp@{test\_main.cpp}!t23@{t23}}
+\index{t23@{t23}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t23()}{t23()}}
+{\footnotesize\ttfamily void t23 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_ac66d8f9d59e27b54e62ce65affdd9633}\label{test__main_8cpp_ac66d8f9d59e27b54e62ce65affdd9633} 
+\index{test\_main.cpp@{test\_main.cpp}!t24@{t24}}
+\index{t24@{t24}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t24()}{t24()}}
+{\footnotesize\ttfamily void t24 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a5c937acac15de6fa3d2048cef4e1bd03}\label{test__main_8cpp_a5c937acac15de6fa3d2048cef4e1bd03} 
+\index{test\_main.cpp@{test\_main.cpp}!t25@{t25}}
+\index{t25@{t25}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t25()}{t25()}}
+{\footnotesize\ttfamily void t25 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a729bdff8f647f21d00e2eda1e69d5ced}\label{test__main_8cpp_a729bdff8f647f21d00e2eda1e69d5ced} 
+\index{test\_main.cpp@{test\_main.cpp}!t26@{t26}}
+\index{t26@{t26}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t26()}{t26()}}
+{\footnotesize\ttfamily void t26 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a0d2015492bf55ef48bacb626d6006a44}\label{test__main_8cpp_a0d2015492bf55ef48bacb626d6006a44} 
+\index{test\_main.cpp@{test\_main.cpp}!t27@{t27}}
+\index{t27@{t27}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t27()}{t27()}}
+{\footnotesize\ttfamily void t27 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a3d9d269c0abb4a3194191c0d1da3f845}\label{test__main_8cpp_a3d9d269c0abb4a3194191c0d1da3f845} 
+\index{test\_main.cpp@{test\_main.cpp}!t28@{t28}}
+\index{t28@{t28}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t28()}{t28()}}
+{\footnotesize\ttfamily void t28 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_ab51d30fd352e03d59039ee8c2f8d729a}\label{test__main_8cpp_ab51d30fd352e03d59039ee8c2f8d729a} 
+\index{test\_main.cpp@{test\_main.cpp}!t29@{t29}}
+\index{t29@{t29}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t29()}{t29()}}
+{\footnotesize\ttfamily void t29 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a4d5ee84ab333815f3c657fbabf7e50a2}\label{test__main_8cpp_a4d5ee84ab333815f3c657fbabf7e50a2} 
+\index{test\_main.cpp@{test\_main.cpp}!t3@{t3}}
+\index{t3@{t3}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t3()}{t3()}}
+{\footnotesize\ttfamily void t3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a75ff5bef6652169eecc069eebc19339a}\label{test__main_8cpp_a75ff5bef6652169eecc069eebc19339a} 
+\index{test\_main.cpp@{test\_main.cpp}!t30@{t30}}
+\index{t30@{t30}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t30()}{t30()}}
+{\footnotesize\ttfamily void t30 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a4f62443a2d18fb45674309ef9b04589e}\label{test__main_8cpp_a4f62443a2d18fb45674309ef9b04589e} 
+\index{test\_main.cpp@{test\_main.cpp}!t31@{t31}}
+\index{t31@{t31}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t31()}{t31()}}
+{\footnotesize\ttfamily void t31 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a992a1a1cb731bf5d6eb46f845a330b4b}\label{test__main_8cpp_a992a1a1cb731bf5d6eb46f845a330b4b} 
+\index{test\_main.cpp@{test\_main.cpp}!t32@{t32}}
+\index{t32@{t32}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t32()}{t32()}}
+{\footnotesize\ttfamily void t32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_af350edb3ffb82317de65a01caf3dcb88}\label{test__main_8cpp_af350edb3ffb82317de65a01caf3dcb88} 
+\index{test\_main.cpp@{test\_main.cpp}!t33@{t33}}
+\index{t33@{t33}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t33()}{t33()}}
+{\footnotesize\ttfamily void t33 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a3b6f2c00ae6c6363ccfb34e23ede5f67}\label{test__main_8cpp_a3b6f2c00ae6c6363ccfb34e23ede5f67} 
+\index{test\_main.cpp@{test\_main.cpp}!t34@{t34}}
+\index{t34@{t34}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t34()}{t34()}}
+{\footnotesize\ttfamily void t34 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a5a82cb5ebbf45e2ed43f27f3d4093722}\label{test__main_8cpp_a5a82cb5ebbf45e2ed43f27f3d4093722} 
+\index{test\_main.cpp@{test\_main.cpp}!t35@{t35}}
+\index{t35@{t35}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t35()}{t35()}}
+{\footnotesize\ttfamily void t35 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a3f98f470d94f38abdb3334c2d7702dc3}\label{test__main_8cpp_a3f98f470d94f38abdb3334c2d7702dc3} 
+\index{test\_main.cpp@{test\_main.cpp}!t36@{t36}}
+\index{t36@{t36}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t36()}{t36()}}
+{\footnotesize\ttfamily void t36 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_aafba79f00e1e720519cdd336ed3c93f9}\label{test__main_8cpp_aafba79f00e1e720519cdd336ed3c93f9} 
+\index{test\_main.cpp@{test\_main.cpp}!t37@{t37}}
+\index{t37@{t37}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t37()}{t37()}}
+{\footnotesize\ttfamily void t37 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a754d0ab5be33ddec5181bef135142968}\label{test__main_8cpp_a754d0ab5be33ddec5181bef135142968} 
+\index{test\_main.cpp@{test\_main.cpp}!t4@{t4}}
+\index{t4@{t4}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t4()}{t4()}}
+{\footnotesize\ttfamily void t4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a4786b0a503ccf0d55f9b0b7864537c7b}\label{test__main_8cpp_a4786b0a503ccf0d55f9b0b7864537c7b} 
+\index{test\_main.cpp@{test\_main.cpp}!t5@{t5}}
+\index{t5@{t5}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t5()}{t5()}}
+{\footnotesize\ttfamily void t5 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_ac2ff091ef7a1c6c41735538469db77a0}\label{test__main_8cpp_ac2ff091ef7a1c6c41735538469db77a0} 
+\index{test\_main.cpp@{test\_main.cpp}!t6@{t6}}
+\index{t6@{t6}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t6()}{t6()}}
+{\footnotesize\ttfamily void t6 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a6854c5c90940f611c765c36609c07318}\label{test__main_8cpp_a6854c5c90940f611c765c36609c07318} 
+\index{test\_main.cpp@{test\_main.cpp}!t7@{t7}}
+\index{t7@{t7}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t7()}{t7()}}
+{\footnotesize\ttfamily void t7 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_a9619ae4409cc84472157f6f7deda27ed}\label{test__main_8cpp_a9619ae4409cc84472157f6f7deda27ed} 
+\index{test\_main.cpp@{test\_main.cpp}!t8@{t8}}
+\index{t8@{t8}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t8()}{t8()}}
+{\footnotesize\ttfamily void t8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{test__main_8cpp_affe4cec5b284b991f5d1879217f87112}\label{test__main_8cpp_affe4cec5b284b991f5d1879217f87112} 
+\index{test\_main.cpp@{test\_main.cpp}!t9@{t9}}
+\index{t9@{t9}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{t9()}{t9()}}
+{\footnotesize\ttfamily void t9 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Переменные}
+\Hypertarget{test__main_8cpp_ad4ec5aab9b62fbbe9b8fc2d8ac0a5989}\label{test__main_8cpp_ad4ec5aab9b62fbbe9b8fc2d8ac0a5989} 
+\index{test\_main.cpp@{test\_main.cpp}!failed@{failed}}
+\index{failed@{failed}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{failed}{failed}}
+{\footnotesize\ttfamily int failed = 0}
+
+\Hypertarget{test__main_8cpp_a561a5450b127e97c5ca67d0b349747a8}\label{test__main_8cpp_a561a5450b127e97c5ca67d0b349747a8} 
+\index{test\_main.cpp@{test\_main.cpp}!passed@{passed}}
+\index{passed@{passed}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{passed}{passed}}
+{\footnotesize\ttfamily int passed = 0}
+
+\Hypertarget{test__main_8cpp_ac7af894858cf396a219d632f40afdc8d}\label{test__main_8cpp_ac7af894858cf396a219d632f40afdc8d} 
+\index{test\_main.cpp@{test\_main.cpp}!total@{total}}
+\index{total@{total}!test\_main.cpp@{test\_main.cpp}}
+\doxysubsubsection{\texorpdfstring{total}{total}}
+{\footnotesize\ttfamily int total = 0}
+
